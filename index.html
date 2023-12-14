@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ICIHSR - 2024</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      html,body{
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700"
+      >
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <h1 class="text-3xl font-bold text-slate-50">ICIHSR - 2024</h1>
+          </a>
+          <button
+            data-collapse-toggle="navbar-dropdown"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-dropdown"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="/"
+                  class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                >
+                  Track
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="index.html#track"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Track I: Robotics and Automation </a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="index.html#track"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Track II: Safety and Fire Engineering</a
+                      >
+                    </li>
+                  </ul>
+
+                </div>
+              </li>
+              <li>
+                <a
+                  href="registration.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Registration</a
+                >
+              </li>
+              <li>
+                <a
+                  href="committee.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Commitee</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="bg-yellow-500 text-white" style="background: linear-gradient(#00000086,#000000b9),url('/img/bg.jpg');background-size: cover;">
+      <div class="py-4 sm:py-32 ">
+        <h1 class="text-4xl w-4/5 mx-auto font-semibold text-center">
+          International Conference on Intelligent
+          Hardware-Software Robotics – <span class="text-yellow-400">ICIHSR - 2024</span>
+        </h1>
+        <div class="flex my-4 flex-wrap">
+  <a href="/registration.html" class="text-white mx-8 my-3 sm:ml-auto   font-bold rounded-lg text-xl px-5   py-2.5 bg-orange-600 hover:bg-orange-500 transition-all focus:outline-none ">Registration</a>
+  <a href="#" class="text-black  mx-8 my-3  sm:mr-auto font-medium rounded-lg text-xl px-5   py-2.5 bg-slate-50 hover:bg-slate-100 focus:outline-none  transition-all ">Download BROCHURE</a>
+</div>
+      </div>
+
+      <div
+        class="min-w-screen hidden   sm:flex items-center justify-center px-5 py-5"
+        x-data="beer()"
+        x-init="start()"
+      >
+        <div class="text-yellow-100">
+          <h1 class="text-3xl text-center mb-3 font-extralight">
+            When will Conference Start?*
+          </h1>
+          <div
+            class="text-6xl text-center flex w-full items-center justify-center"
+          >
+            <div class="text-2xl mr-1 font-extralight">in</div>
+            <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
+              <div class="font-mono leading-none  max-sm:text-3xl" x-text="days">00</div>
+              <div class="font-mono uppercase text-sm leading-none">Days</div>
+            </div>
+            <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
+              <div class="font-mono leading-none  max-sm:text-3xl" x-text="hours">00</div>
+              <div class="font-mono uppercase text-sm leading-none">Hours</div>
+            </div>
+            <div class="w-24 mx-1 hidden sm:block p-2 bg-white text-yellow-500 rounded-lg">
+              <div class="font-mono leading-none max-sm:text-3xl" x-text="minutes">00</div>
+              <div class="font-mono uppercase text-sm leading-none">Minutes</div>
+          </div>
+            <div class="text-2xl mx-1 font-extralight">and</div>
+            <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
+              <div class="font-mono leading-none max-sm:text-3xl" x-text="seconds">00</div>
+              <div class="font-mono uppercase text-sm leading-none">
+                Seconds
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- mobile -->
+      <div class="sm:hidden">
+        <div
+        class="min-w-screen  flex items-center justify-center px-5 py-5"
+        x-data="beer()"
+        x-init="start()"
+      >
+        <div class="text-yellow-100">
+          <h1 class="text-3xl text-center mb-3 font-extralight">
+            When will Conference Start?*
+          </h1>
+          <div
+            class="text-6xl text-center flex w-full items-center justify-center"
+          >
+            <div class="text-2xl mr-1 font-extralight">in</div>
+            <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
+              <div class="font-mono leading-none  max-sm:text-3xl" x-text="days">00</div>
+              <div class="font-mono uppercase text-sm leading-none">Days</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+      class="min-w-screen  flex items-center justify-center px-5 py-5 pt-0"
+      x-data="beer()"
+      x-init="start()"
+    >
+      <div class="text-yellow-100">
+        
+        <div
+          class="text-6xl text-center flex w-full items-center justify-center"
+        >
+          
+          <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
+            <div class="font-mono leading-none  max-sm:text-3xl" x-text="hours">00</div>
+            <div class="font-mono uppercase text-sm leading-none">Hours</div>
+          </div>
+          <div class="w-24 mx-1  p-2 bg-white text-yellow-500 rounded-lg">
+            <div class="font-mono leading-none max-sm:text-3xl" x-text="minutes">00</div>
+            <div class="font-mono uppercase text-sm leading-none">Minutes</div>
+        </div>
+          <div class="text-2xl mx-1 font-extralight">and</div>
+          <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
+            <div class="font-mono leading-none max-sm:text-3xl" x-text="seconds">00</div>
+            <div class="font-mono uppercase text-sm leading-none">
+              Seconds
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+      </div>
+
+      
+    </section>
+
+    <section class="mb-8 text-center my-24">
+      <h1 class="text-4xl font-bold mb-4">About the Conference</h1>
+      <h2 class="text-xl mb-4 font-bold">
+        IntelliBotics: International Conference on Intelligent Hardware-Software
+        Robotics – ICIHSR - 2024
+      </h2>
+      <p class="mb-4 text-justify w-4/5 mx-auto">
+        KMEA Engineering College, Edathala will host the First International
+        Conference on Intelligent Hardware-Software Robotics (ICIHSR) from
+        February 22-23, 2024. It will be an innovative and insightful event
+        addressing the pressing global issue related to robotics technologies
+        and safety engineering. This groundbreaking conference, featuring a
+        dynamic combination of intellectual discourse and hands-on exploration,
+        invites scholars, researchers, and innovators from around the world to
+        delve into the realm of intelligent hardware-software robotics.
+      </p>
+    </section>
+
+    <section class="text-center my-12">
+      <h1 class="text-4xl font-bold mb-4">About the Institution</h1>
+      <p class="mb-4 text-justify w-4/5 mx-auto">
+        The Kerala Muslim Educational Association was established in 1957 with
+        the lofty aim of setting up quality educational institutions on a par
+        with global standards promoting education among minority communities and
+        providing financial aid to the economically weak and deserving students.
+        Late Sri. Poker Sahib, an eminent Parliamentarian and Philanthropist and
+        late Sri. K. M. Seethi Sahib, former speaker of the Kerala Legislative
+        Assembly, was the key forces behind the formation of KMEA. Former Chief
+        Minister Sri. C. H. Muhammed Koya has also actively participated in the
+        formation of the association. KMEA Engineering College (KEC) was
+        established in 2002 under the management of Kerala Muslim Educational
+        Association, a charitable trust. It is approved by All India Council for
+        Technical Education (AICTE) and affiliated to APJ Abdul Kalam
+        Technological University. The college is accredited by the National
+        Assessment and Accreditation Council (NAAC). Civil Engineering, Computer
+        Science & Engineering, Electrical & Electronics Engineering, Electronics
+        & Communication and Mechanical Engineering UG programs are accredited by
+        the National Board of Accreditation (NBA).
+      </p>
+      <h4 class="text-xl font-bold mt-4 mb-2 mx">
+        Conference Awards for Short Invited Lectures & Posters
+      </h4>
+      <p class="mb-4 text-justify w-4/5 mx-auto">
+        The conference organizers will present three awards for the best
+        presentations and best posters. An International Jury will evaluate both
+        the presentations and the posters.
+      </p>
+    </section>
+
+    <section>
+      <div class="my-12">
+        <div class="flex justify-center">
+          <div class="sm:w-2/3 mx-auto">
+            <div class="flex flex-row w-full">
+              <!-- left col -->
+
+              <div class="w-2/5 px-2 py-10">
+                <div
+                  class="flex flex-col w-full rounded-lg shadow bg-amber-400 px-4 py-5"
+                >
+                  <div class="text-gray-900 mb-2 flex justify-between">
+                    <div class="font-bold">
+                      Deadline for the submission of the Abstract Document
+                    </div>
+                    <div class="flex flex-row">
+                      <button
+                        class="text-blue-500 mr-2 hover:text-blue-300 transition duration-200"
+                      >
+                        <i class="far fa-edit"></i>
+                      </button>
+                      <button
+                        class="text-red-500 hover:text-red-300 transition duration-200"
+                      >
+                        <i class="far fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="text-gray-800"></div>
+                </div>
+              </div>
+              <!--line column-->
+              <div class="w-1/5 flex justify-center">
+                <div
+                  class="relative flex h-full w-1 bg-blue-950 items-center justify-center"
+                >
+                  <div
+                    class="absolute flex flex-col justify-center h-24 w-24 rounded-full border-2 border-blue-950 leading-none text-center z-10 bg-white font-thin"
+                  >
+                    <div>15</div>
+                    <div class="font-bold text-xl">DEC</div>
+                    <div>2024</div>
+                  </div>
+                </div>
+              </div>
+              <!--right column-->
+              <div class="w-2/5 px-2 py-10"></div>
+            </div>
+            <div class="flex flex-row w-full">
+              <!-- left col -->
+
+              <div class="w-2/5 px-2 py-10"></div>
+              <!--line column-->
+              <div class="w-1/5 flex justify-center">
+                <div
+                  class="relative flex h-full w-1 bg-blue-950 items-center justify-center"
+                >
+                  <div
+                    class="absolute flex flex-col justify-center h-24 w-24 rounded-full border-2 border-blue-950 leading-none text-center z-10 bg-white font-thin"
+                  >
+                    <div>5</div>
+                    <div class="font-bold text-xl">JAN</div>
+                    <div>2024</div>
+                  </div>
+                </div>
+              </div>
+              <!--right column-->
+              <div class="w-2/5 px-2 py-10">
+                <div
+                  class="flex flex-col w-full rounded-lg shadow bg-lime-400 px-4 py-5"
+                >
+                  <div class="text-gray-900 mb-2 flex justify-between">
+                    <div class="font-bold">
+                      Deadline for the submission of the Full Paper Submission
+                    </div>
+                  </div>
+                  <div class="text-gray-600"></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-row w-full">
+              <!-- left col -->
+
+              <div class="w-2/5 px-2 py-10">
+                <div
+                  class="flex flex-col w-full rounded-lg shadow bg-indigo-400 px-4 py-5"
+                >
+                  <div class="text-gray-900 mb-2 flex justify-between">
+                    <div class="font-bold">
+                      Deadline for the submission of the Registration Fee
+                    </div>
+                    <div class="flex flex-row">
+                      <button
+                        class="text-blue-500 mr-2 hover:text-blue-300 transition duration-200"
+                      >
+                        <i class="far fa-edit"></i>
+                      </button>
+                      <button
+                        class="text-red-500 hover:text-red-300 transition duration-200"
+                      >
+                        <i class="far fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="text-gray-600"></div>
+                </div>
+              </div>
+              <!--line column-->
+              <div class="w-1/5 flex justify-center">
+                <div
+                  class="relative flex h-full w-1 bg-blue-950 items-center justify-center"
+                >
+                  <div
+                    class="absolute flex flex-col justify-center h-24 w-24 rounded-full border-2 border-blue-950 leading-none text-center z-10 bg-white font-thin"
+                  >
+                    <div>15</div>
+                    <div class="font-bold text-xl">JAN</div>
+                    <div>2024</div>
+                  </div>
+                </div>
+              </div>
+              <!--right column-->
+              <div class="w-2/5 px-2 py-10"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center my-12">
+      <h1 class="text-4xl font-bold mb-4 ">Call for Papers</h1>
+      <p class="mb-4 text-justify w-4/5 mx-auto">
+        We enthusiastically encourage prospective authors to submit an
+        electronic version of their original research papers that contain
+        contributions of theoretical, experimental or application nature using
+        Microsoft CMT. The conference is organized in two tracks of “Intelligent
+        Hardware-Software Robotics & Safety Systems" and will feature
+        distinguished invited speakers in each track.
+      </p>
+      <p class="mb-4 text-justify w-4/5 mx-auto">
+        The submitted papers must be substantially original work, which has
+        neither been published before nor is under review for any other
+        conference or journal. The ICIHSR strictly prohibits any plagiarism. The
+        ICIHSR retains the right to eliminate any paper in violation of these
+        requirements and to exclude the author(s) of such papers from future
+        ICIHSR conferences. Selected papers recommended by the Review Committee
+        would be compiled in a proceeding. It is planned to publish the
+        proceedings with Apple Academic press exclusively co-publishing with CRC
+        Press, Taylor and Francis group.
+      </p>
+    </section>
+    <section id="track" class="my-12 mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-around">
+        <!-- Track I: Robotics and Automation -->
+        <div class="bg-blue-200 p-4 rounded-lg mx-auto">
+          <h2 class="text-2xl font-bold mb-4 text-blue-800">
+            Track I: Robotics and Automation
+          </h2>
+          <ul class="list-disc pl-4 text-blue-700">
+            <li>Robot Control Systems</li>
+            <li>Security and Safety in Robotics</li>
+            <li>Robotics in Industry</li>
+            <li>Robotics in Agriculture</li>
+            <li>Underwater Robotics</li>
+            <li>Autonomous Robotic Systems</li>
+            <li>Human-Robot Interaction</li>
+            <li>Artificial Intelligence in Robotics</li>
+            <li>Automation Technologies</li>
+            <li>Robotics in Healthcare</li>
+            <li>Bio-inspired Robotics</li>
+            <li>Swarm Robotics</li>
+            <li>Robotics in Education</li>
+            <li>Robotics and Sustainable Development</li>
+          </ul>
+        </div>
+
+        <!-- Track II: Safety and Fire Engineering -->
+        <div class="bg-green-200 p-4 rounded-lg mx-auto">
+          <h2 class="text-2xl font-bold mb-4 text-green-800">
+            Track II: Safety and Fire Engineering
+          </h2>
+          <ul class="list-disc pl-4 text-green-700">
+            <li>Fire Dynamics and Modeling</li>
+            <li>Structural Fire Engineering</li>
+            <li>Fire Detection and Suppression Systems</li>
+            <li>Human Behaviour in Fire Safety</li>
+            <li>Fire Protection Systems</li>
+            <li>Wildfire Risk Assessment and Management</li>
+            <li>Industrial Fire Safety</li>
+            <li>Codes and Standards in Fire Safety</li>
+            <li>Fire Investigation and Forensics</li>
+            <li>Emergency Preparedness and Management</li>
+            <li>Environmental Impact of Fires</li>
+            <li>Inherent Safety in Industrial Operations</li>
+            <li>Advanced Technologies in Fire Engineering</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    
+<footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4 ">
+  <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <a href="/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+              <h1 class="text-3xl font-bold text-slate-50">ICIHSR - 2024</h1>
+          </a>
+          <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+              <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">About</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline">Contact</a>
+              </li>
+          </ul>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 ICIHSR™. All Rights Reserved.</span>
+  </div>
+</footer>
+
+    <script>
+      function beer() {
+        return {
+          seconds: "00",
+          minutes: "00",
+          hours: "00",
+          days: "00",
+          distance: 0,
+          countdown: null,
+          beerTime: new Date("Feb 22, 2024 00:00:00").getTime(),
+          now: new Date().getTime(),
+          start: function () {
+            this.countdown = setInterval(() => {
+              // Calculate time
+              this.now = new Date().getTime();
+              this.distance = this.beerTime - this.now;
+              // Set Times
+              this.days = this.padNum(
+                Math.floor(this.distance / (1000 * 60 * 60 * 24))
+              );
+              this.hours = this.padNum(
+                Math.floor(
+                  (this.distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                )
+              );
+              this.minutes = this.padNum(
+                Math.floor((this.distance % (1000 * 60 * 60)) / (1000 * 60))
+              );
+              this.seconds = this.padNum(
+                Math.floor((this.distance % (1000 * 60)) / 1000)
+              );
+              // Stop
+              if (this.distance < 0) {
+                clearInterval(this.countdown);
+                this.days = "00";
+                this.hours = "00";
+                this.minutes = "00";
+                this.seconds = "00";
+              }
+            }, 100);
+          },
+          padNum: function (num) {
+            var zero = "";
+            for (var i = 0; i < 2; i++) {
+              zero += "0";
+            }
+            return (zero + num).slice(-2);
+          },
+        };
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"
+      defer
+    ></script>
+
+    <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gN538M6GJt05D5uUg6Z67IfvC7v2m6nOp6QbO5D5R5C/G4tvzL46P5enZM+AYuoV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
