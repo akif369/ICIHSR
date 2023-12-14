@@ -9,10 +9,13 @@
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@600&family=Roboto:wght@400;500&family=Silkscreen&display=swap" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
-  <body>
+  <body  style="font-family: 'Roboto', sans-serif;">
     <header>
       <nav
         class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700"
@@ -21,7 +24,7 @@
           class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
         >
           <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <h1 class="text-3xl font-bold text-slate-50">ICIHSR - 2024</h1>
+            <h1 class="text-3xl font-bold text-slate-50" style="font-family: 'Roboto', sans-serif;" >ICIHSR - 2024</h1>
           </a>
           <button
             data-collapse-toggle="navbar-dropdown"
@@ -117,6 +120,13 @@
               </li>
               <li>
                 <a
+                  href="index.html#speaker-section"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Speaker</a
+                >
+              </li>
+              <li>
+                <a
                   href="committee.html"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >Commitee</a
@@ -134,6 +144,7 @@
         </div>
       </nav>
     </header>
+
     <section>
       <section class="mt-12 px-8 text-lg">
         <h2 class="text-2xl font-bold mb-4">Registration</h2>
@@ -206,7 +217,7 @@
             class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
           >
             <li>
-              <a href="#" class="hover:underline me-4 md:me-6">About</a>
+              <a href="/" class="hover:underline me-4 md:me-6">Home</a>
             </li>
             <li>
               <a href="#" class="hover:underline me-4 md:me-6"
@@ -214,10 +225,10 @@
               >
             </li>
             <li>
-              <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+              <a href="/index.html#speaker-section" class="hover:underline me-4 md:me-6">Speaker</a>
             </li>
             <li>
-              <a href="#" class="hover:underline">Contact</a>
+              <a href="/contact.html" class="hover:underline">Contact</a>
             </li>
           </ul>
         </div>

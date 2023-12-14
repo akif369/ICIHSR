@@ -9,15 +9,26 @@
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
-      html,body{
+      html,
+      body {
         scroll-behavior: smooth;
       }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@600&family=Roboto:wght@400;500&family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body style="font-family: 'Roboto', sans-serif;">
     <header>
       <nav
         class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700"
@@ -26,7 +37,7 @@
           class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
         >
           <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <h1 class="text-3xl font-bold text-slate-50">ICIHSR - 2024</h1>
+            <h1 class="text-3xl font-bold text-slate-50" style="font-family: 'Roboto', sans-serif;" >ICIHSR - 2024</h1>
           </a>
           <button
             data-collapse-toggle="navbar-dropdown"
@@ -100,8 +111,8 @@
                       <a
                         href="index.html#track"
                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >Track I: Robotics and Automation </a
-                      >
+                        >Track I: Robotics and Automation
+                      </a>
                     </li>
                     <li>
                       <a
@@ -111,7 +122,6 @@
                       >
                     </li>
                   </ul>
-
                 </div>
               </li>
               <li>
@@ -119,6 +129,13 @@
                   href="registration.html"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >Registration</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#speaker-section"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Speaker</a
                 >
               </li>
               <li>
@@ -141,20 +158,68 @@
       </nav>
     </header>
 
-    <section class="bg-yellow-500 text-white" style="background: linear-gradient(#00000086,#000000b9),url('/img/bg.jpg');background-size: cover;">
-      <div class="py-4 sm:py-32 ">
-        <h1 class="text-4xl w-4/5 mx-auto font-semibold text-center">
-          International Conference on Intelligent
-          Hardware-Software Robotics – <span class="text-yellow-400">ICIHSR - 2024</span>
+    <section
+      class="bg-yellow-500 text-white"
+      style="
+        background: linear-gradient(#00000086, #000000b9), url('/img/bg1.jpg');
+        background-size: cover;
+      "
+    >
+      <div class="py-4 sm:pt-32 pb-12">
+        <h1 class="text-4xl w-4/5 mx-auto font-semibold font-robo text-center" style="font-family: 'Roboto', sans-serif;">
+          International Conference on Intelligent Hardware-Software Robotics –
+          <span class="text-yellow-400" style="font-family: 'Silkscreen', sans-serif;">ICIHSR - 2024</span>
         </h1>
-        <div class="flex my-4 flex-wrap">
-  <a href="/registration.html" class="text-white mx-8 my-3 sm:ml-auto   font-bold rounded-lg text-xl px-5   py-2.5 bg-orange-600 hover:bg-orange-500 transition-all focus:outline-none ">Registration</a>
-  <a href="#" class="text-black  mx-8 my-3  sm:mr-auto font-medium rounded-lg text-xl px-5   py-2.5 bg-slate-50 hover:bg-slate-100 focus:outline-none  transition-all ">Download BROCHURE</a>
-</div>
+        <div class="flex my-3 flex-wrap">
+          <a
+            href="/registration.html"
+            class="text-white mx-8 my-2 sm:ml-auto font-bold rounded-lg text-xl px-5 py-2.5 bg-orange-600 hover:bg-orange-500 transition-all focus:outline-none"
+            >Registration</a
+          >
+          <a
+            href="#"
+            class="text-black mx-8 my-2 sm:mr-auto font-medium rounded-lg text-xl px-5 py-2.5 bg-slate-50 hover:bg-slate-100 focus:outline-none transition-all"
+            >Download BROCHURE</a
+          >
+        </div>
+      </div>
+
+      <div class="flex flex-wrap justify-center cursor-pointer">
+        <div class="text-xl font-bold max-sm:rounded-t-md sm:rounded-l-md  bg-rose-600 p-3 px-5 flex">
+          <div class="my-auto text-3xl px-2 py-1 m-1 bg-rose-400 rounded-md">
+            <i class="fa-regular fa-calendar"></i>
+          </div>
+          <div class="my-auto">
+            <h1>Conference Date</h1>
+            <h2 class="text-sm font-medium">22rd-23rd February ,2024</h2>
+          </div>
+        </div>
+
+        <div class="text-xl font-bold max-sm:rounded-t-md bg-indigo-500 p-3 px-5 flex">
+          <div class="my-auto text-2xl px-3 py-2 m-1 bg-indigo-400 rounded-md">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div>
+            <h1>Conference Venue</h1>
+            <h2 class="text-sm font-medium">KMEA ENGINEERING COLLEGE</h2>
+          </div>
+        </div>
+
+        <div class="text-md font-bold max-sm:rounded-md  sm:rounded-r-md bg-emerald-500 p-3 px-5 flex">
+          <div class="my-auto text-3xl px-2 py-1 m-1 bg-emerald-400 rounded-md">
+            <i class="fa-solid fa-headphones"></i>
+          </div>
+          <div class="my-auto">
+            <h1>CALL:(+91)944685 7868</h1>
+            <h2 class="text-sm font-medium">
+              Press 1 (For International conference call)
+            </h2>
+          </div>
+        </div>
       </div>
 
       <div
-        class="min-w-screen hidden   sm:flex items-center justify-center px-5 py-5"
+        class="min-w-screen hidden sm:flex items-center justify-center px-5 py-5"
         x-data="beer()"
         x-init="start()"
       >
@@ -167,20 +232,41 @@
           >
             <div class="text-2xl mr-1 font-extralight">in</div>
             <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
-              <div class="font-mono leading-none  max-sm:text-3xl" x-text="days">00</div>
+              <div class="font-mono leading-none max-sm:text-3xl" x-text="days">
+                00
+              </div>
               <div class="font-mono uppercase text-sm leading-none">Days</div>
             </div>
             <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
-              <div class="font-mono leading-none  max-sm:text-3xl" x-text="hours">00</div>
+              <div
+                class="font-mono leading-none max-sm:text-3xl"
+                x-text="hours"
+              >
+                00
+              </div>
               <div class="font-mono uppercase text-sm leading-none">Hours</div>
             </div>
-            <div class="w-24 mx-1 hidden sm:block p-2 bg-white text-yellow-500 rounded-lg">
-              <div class="font-mono leading-none max-sm:text-3xl" x-text="minutes">00</div>
-              <div class="font-mono uppercase text-sm leading-none">Minutes</div>
-          </div>
+            <div
+              class="w-24 mx-1 hidden sm:block p-2 bg-white text-yellow-500 rounded-lg"
+            >
+              <div
+                class="font-mono leading-none max-sm:text-3xl"
+                x-text="minutes"
+              >
+                00
+              </div>
+              <div class="font-mono uppercase text-sm leading-none">
+                Minutes
+              </div>
+            </div>
             <div class="text-2xl mx-1 font-extralight">and</div>
             <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
-              <div class="font-mono leading-none max-sm:text-3xl" x-text="seconds">00</div>
+              <div
+                class="font-mono leading-none max-sm:text-3xl"
+                x-text="seconds"
+              >
+                00
+              </div>
               <div class="font-mono uppercase text-sm leading-none">
                 Seconds
               </div>
@@ -189,62 +275,80 @@
         </div>
       </div>
 
-
       <!-- mobile -->
       <div class="sm:hidden">
         <div
-        class="min-w-screen  flex items-center justify-center px-5 py-5"
-        x-data="beer()"
-        x-init="start()"
-      >
-        <div class="text-yellow-100">
-          <h1 class="text-3xl text-center mb-3 font-extralight">
-            When will Conference Start?*
-          </h1>
-          <div
-            class="text-6xl text-center flex w-full items-center justify-center"
-          >
-            <div class="text-2xl mr-1 font-extralight">in</div>
-            <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
-              <div class="font-mono leading-none  max-sm:text-3xl" x-text="days">00</div>
-              <div class="font-mono uppercase text-sm leading-none">Days</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-      class="min-w-screen  flex items-center justify-center px-5 py-5 pt-0"
-      x-data="beer()"
-      x-init="start()"
-    >
-      <div class="text-yellow-100">
-        
-        <div
-          class="text-6xl text-center flex w-full items-center justify-center"
+          class="min-w-screen flex items-center justify-center px-5 py-5"
+          x-data="beer()"
+          x-init="start()"
         >
-          
-          <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
-            <div class="font-mono leading-none  max-sm:text-3xl" x-text="hours">00</div>
-            <div class="font-mono uppercase text-sm leading-none">Hours</div>
+          <div class="text-yellow-100">
+            <h1 class="text-3xl text-center mb-3 font-extralight">
+              When will Conference Start?*
+            </h1>
+            <div
+              class="text-6xl text-center flex w-full items-center justify-center"
+            >
+              <div class="text-2xl mr-1 font-extralight">in</div>
+              <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
+                <div
+                  class="font-mono leading-none max-sm:text-3xl"
+                  x-text="days"
+                >
+                  00
+                </div>
+                <div class="font-mono uppercase text-sm leading-none">Days</div>
+              </div>
+            </div>
           </div>
-          <div class="w-24 mx-1  p-2 bg-white text-yellow-500 rounded-lg">
-            <div class="font-mono leading-none max-sm:text-3xl" x-text="minutes">00</div>
-            <div class="font-mono uppercase text-sm leading-none">Minutes</div>
         </div>
-          <div class="text-2xl mx-1 font-extralight">and</div>
-          <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
-            <div class="font-mono leading-none max-sm:text-3xl" x-text="seconds">00</div>
-            <div class="font-mono uppercase text-sm leading-none">
-              Seconds
+        <div
+          class="min-w-screen flex items-center justify-center px-5 py-5 pt-0"
+          x-data="beer()"
+          x-init="start()"
+        >
+          <div class="text-yellow-100">
+            <div
+              class="text-6xl text-center flex w-full items-center justify-center"
+            >
+              <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
+                <div
+                  class="font-mono leading-none max-sm:text-3xl"
+                  x-text="hours"
+                >
+                  00
+                </div>
+                <div class="font-mono uppercase text-sm leading-none">
+                  Hours
+                </div>
+              </div>
+              <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
+                <div
+                  class="font-mono leading-none max-sm:text-3xl"
+                  x-text="minutes"
+                >
+                  00
+                </div>
+                <div class="font-mono uppercase text-sm leading-none">
+                  Minutes
+                </div>
+              </div>
+              <div class="text-2xl mx-1 font-extralight">and</div>
+              <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
+                <div
+                  class="font-mono leading-none max-sm:text-3xl"
+                  x-text="seconds"
+                >
+                  00
+                </div>
+                <div class="font-mono uppercase text-sm leading-none">
+                  Seconds
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-        
-      </div>
-
-      
     </section>
 
     <section class="mb-8 text-center my-24">
@@ -311,18 +415,7 @@
                     <div class="font-bold">
                       Deadline for the submission of the Abstract Document
                     </div>
-                    <div class="flex flex-row">
-                      <button
-                        class="text-blue-500 mr-2 hover:text-blue-300 transition duration-200"
-                      >
-                        <i class="far fa-edit"></i>
-                      </button>
-                      <button
-                        class="text-red-500 hover:text-red-300 transition duration-200"
-                      >
-                        <i class="far fa-trash-alt"></i>
-                      </button>
-                    </div>
+                 
                   </div>
                   <div class="text-gray-800"></div>
                 </div>
@@ -387,18 +480,7 @@
                     <div class="font-bold">
                       Deadline for the submission of the Registration Fee
                     </div>
-                    <div class="flex flex-row">
-                      <button
-                        class="text-blue-500 mr-2 hover:text-blue-300 transition duration-200"
-                      >
-                        <i class="far fa-edit"></i>
-                      </button>
-                      <button
-                        class="text-red-500 hover:text-red-300 transition duration-200"
-                      >
-                        <i class="far fa-trash-alt"></i>
-                      </button>
-                    </div>
+                    
                   </div>
                   <div class="text-gray-600"></div>
                 </div>
@@ -424,9 +506,117 @@
         </div>
       </div>
     </section>
+    <section id="speaker-section">
+      <!-- Profile Card -->
+      <div class="container mx-auto p-4 flex flex-wrap gap-4 justify-center">
+        <div
+          class="bg-gray-100 w-96 dark:bg-gray-700 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-5 transition-all duration-500 transform"
+        >
+          <div class="flex items-center gap-4">
+            <img
+              src="/img/Thiyagarajan.jpg"
+              class="w-32 group-hover:w-36 group-hover:h-36 h-32 object-center object-cover rounded-full transition-all duration-500 delay-500 transform"
+            />
+            <div class="w-fit transition-all transform duration-500">
+              <h1 class="text-gray-600 dark:text-gray-200 font-bold">
+                Dr. Thiyagarajan  R
+              </h1>
+              <p class="text-gray-400"> IIT Tirupati, India</p>
+              <a
+                class="text-xs text-gray-500 dark:text-gray-200 group-hover:opacity-100 opacity-0 transform transition-all delay-300 duration-500"
+              >
+              Assistant Professor
+              </a>
+            </div>
+          </div>
+          <div
+            class="absolute group-hover:bottom-1 delay-300 -bottom-16 transition-all duration-500 bg-gray-600 dark:bg-gray-100 right-1 rounded-lg"
+          ></div>
+        </div>
 
+
+        <div
+          class="bg-gray-100 w-96 dark:bg-gray-700 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-5 transition-all duration-500 transform"
+        >
+          <div class="flex items-center gap-4">
+            <img
+              src="/img/Alok.jpg"
+              class="w-32 group-hover:w-36 group-hover:h-36 h-32 object-center object-cover rounded-full transition-all duration-500 delay-500 transform"
+            />
+            <div class="w-fit transition-all transform duration-500">
+              <h1 class="text-gray-600 dark:text-gray-200 font-bold">
+                Mr. Alok Mukherjee
+              </h1>
+              <p class="text-gray-400"> DRDO Pune, India</p>
+              <a
+                class="text-xs text-gray-500 dark:text-gray-200 group-hover:opacity-100 opacity-0 transform transition-all delay-300 duration-500"
+              >
+              Rtd. Scientist-G
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="absolute group-hover:bottom-1 delay-300 -bottom-16 transition-all duration-500 bg-gray-600 dark:bg-gray-100 right-1 rounded-lg"
+          ></div>
+        </div>
+
+        <div
+        class="bg-gray-100 w-96 dark:bg-gray-700 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-5 transition-all duration-500 transform"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            src="/img/person.png"
+            class="w-32 group-hover:w-36 group-hover:h-36 h-32 object-center object-cover rounded-full transition-all duration-500 delay-500 transform"
+          />
+          <div class="w-fit transition-all transform duration-500">
+            <h1 class="text-gray-600 dark:text-gray-200 font-bold">
+              Dr. V R Renjith
+            </h1>
+            <p class="text-gray-400"> CUSAT, India</p>
+            <a
+              class="text-xs text-gray-500 dark:text-gray-200 group-hover:opacity-100 opacity-0 transform transition-all delay-300 duration-500"
+            >
+            Ph.D. in Industrial Safety 
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="absolute group-hover:bottom-1 delay-300 -bottom-16 transition-all duration-500 bg-gray-600 dark:bg-gray-100 right-1 rounded-lg"
+        ></div>
+      </div>
+
+      <div
+        class="bg-gray-100 w-96 dark:bg-gray-700 relative shadow-xl overflow-hidden hover:shadow-2xl group rounded-xl p-5 transition-all duration-500 transform"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            src="/img/person.png"
+            class="w-32 group-hover:w-36 group-hover:h-36 h-32 object-center object-cover rounded-full transition-all duration-500 delay-500 transform"
+          />
+          <div class="w-fit transition-all transform duration-500">
+            <h1 class="text-gray-600 dark:text-gray-200 font-bold">
+              Dr. Mohammed Saif AL-Saidi
+            </h1>
+            <p class="text-gray-400"> University of  Technology and Applied Sciences, Oman</p>
+            <a
+              class="text-xs text-gray-500 dark:text-gray-200 group-hover:opacity-100 opacity-0 transform transition-all delay-300 duration-500"
+            >
+            System Support Engineering
+            </a>
+          </div>
+        </div>
+        <div
+          class="absolute group-hover:bottom-1 delay-300 -bottom-16 transition-all duration-500 bg-gray-600 dark:bg-gray-100 right-1 rounded-lg"
+        ></div>
+      </div>
+
+
+      </div>
+    </section>
     <section class="text-center my-12">
-      <h1 class="text-4xl font-bold mb-4 ">Call for Papers</h1>
+      <h1 class="text-4xl font-bold mb-4">Call for Papers</h1>
       <p class="mb-4 text-justify w-4/5 mx-auto">
         We enthusiastically encourage prospective authors to submit an
         electronic version of their original research papers that contain
@@ -496,32 +686,43 @@
       </div>
     </section>
 
-    
-<footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4 ">
-  <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-      <div class="sm:flex sm:items-center sm:justify-between">
-          <a href="/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-              <h1 class="text-3xl font-bold text-slate-50">ICIHSR - 2024</h1>
+    <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href="/"
+            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+          >
+            <h1 class="text-3xl font-bold text-slate-50">ICIHSR - 2024</h1>
           </a>
-          <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-              <li>
-                  <a href="#" class="hover:underline me-4 md:me-6">About</a>
-              </li>
-              <li>
-                  <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-              </li>
-              <li>
-                  <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-              </li>
-              <li>
-                  <a href="#" class="hover:underline">Contact</a>
-              </li>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
+          >
+            <li>
+              <a href="/" class="hover:underline me-4 md:me-6">Home</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="/index.html#speaker-section" class="hover:underline me-4 md:me-6">Speaker</a>
+            </li>
+            <li>
+              <a href="/contact.html" class="hover:underline">Contact</a>
+            </li>
           </ul>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <span
+          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2024 ICIHSR™. All Rights Reserved.</span
+        >
       </div>
-      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 ICIHSR™. All Rights Reserved.</span>
-  </div>
-</footer>
+    </footer>
 
     <script>
       function beer() {
